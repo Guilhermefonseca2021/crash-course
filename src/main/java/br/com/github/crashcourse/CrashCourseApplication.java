@@ -20,6 +20,9 @@ public class CrashCourseApplication {
 		// With configuration we can create a bean directly, with method to get bean name and method type.
 		MyFirstClass thirdClass = context.getBean("myBeanName", MyFirstClass.class);
 		System.out.println(thirdClass.sayHello());
+
+		MyFirstService myFirstService = context.getBean(MyFirstService.class);
+		System.out.println(myFirstService.tellStory());
 	}
 
 	@Bean // i just created a bean to transform this class in tranformer.

@@ -9,4 +9,5 @@ public class ApplicationConfig {
     public MyFirstClass thirdClass() {
         return new MyFirstClass("First Bean");
     }
+
 }
